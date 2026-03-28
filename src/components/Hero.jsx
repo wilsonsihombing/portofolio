@@ -50,8 +50,14 @@ const Hero = () => {
             <a href="#projects" className="btn btn-primary">
               Lihat Karya Saya
             </a>
-            <a href="#contact" className="btn btn-outline">
-              Hubungi Saya
+            {/* Ganti nomor 628123456789 dengan nomor WhatsApp Anda */}
+            <a
+              href="https://wa.me/6282267296897?text=Halo%20Wilson,%20saya%20tertarik%20dengan%20portofolio%20Anda"
+              className="btn btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hubungi Saya (WA)
             </a>
           </div>
         </div>
