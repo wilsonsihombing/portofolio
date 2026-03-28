@@ -3,10 +3,10 @@ import React from 'react';
 const About = () => {
   return (
     <section id="about" className="reveal">
-      <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+      <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
         
         <div style={{ position: 'relative' }}>
-          <div className="glass-card" style={{ padding: '3rem', position: 'relative', zIndex: 1 }}>
+          <div className="glass-card contact-card" style={{ padding: '3rem', position: 'relative', zIndex: 1 }}>
             <h2 className="section-title text-gradient">Sekilas Tentang Saya</h2>
             <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '1.1rem', lineHeight: '1.8' }}>
               Halo! Saya <strong>Wilson Eksaudi Sihombing</strong>, mahasiswa tingkat akhir di jurusan <strong>Sistem Informasi - Institut Teknologi Del</strong>.

@@ -53,7 +53,7 @@ const Projects = () => {
         Galeri proyek unggulan tempat rekayasa perangkat lunak dikolaborasikan bersama estetika *user experience*.
       </p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem' }}>
+      <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem' }}>
         {projects.map((project, idx) => (
           <div key={idx} className="glass-card" style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ height: '200px', background: project.gradient, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

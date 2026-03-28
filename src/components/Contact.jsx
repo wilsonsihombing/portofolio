@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <section id="contact" className="reveal container">
-      <div className="glass-card" style={{ padding: '4rem', textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+      <div className="glass-card contact-card">
         <h2 className="section-title text-gradient center" style={{ textAlign: 'center', display: 'block' }}>Hubungi Saya</h2>
         <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem', margin: '2rem 0', lineHeight: 1.8 }}>
           Saya dengan senang hati menyambut peluang kolaborasi maupun posisi purnawaktu/paruh waktu dalam bidang rekayasa perangkat lunak dan pengembangan sistem. 

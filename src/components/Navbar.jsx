@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,21 +34,25 @@ const Navbar = () => {
       borderBottom: scrolled ? '1px solid var(--border-color)' : 'none',
       zIndex: 1000,
       transition: 'all 0.3s ease',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center'
     }}>
-      <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-main)' }}>
-        Porto<span style={{ color: 'var(--primary-color)' }}>.</span>
+      <div className="nav-container">
+        <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-main)', zIndex: 1001 }}>
+          Porto<span style={{ color: 'var(--primary-color)' }}>.</span>
+        </div>
+        
+        <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle Menu">
+          {isOpen ? '✕' : '☰'}
+        </button>
+
+        <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+          <li><a href="#hero" onClick={() => setIsOpen(false)}>Beranda</a></li>
+          <li><a href="#about" onClick={() => setIsOpen(false)}>Tentang</a></li>
+          <li><a href="#skills" onClick={() => setIsOpen(false)}>Keahlian</a></li>
+          <li><a href="#experience" onClick={() => setIsOpen(false)}>Pengalaman</a></li>
+          <li><a href="#projects" onClick={() => setIsOpen(false)}>Proyek</a></li>
+          <li><a href="#contact" onClick={() => setIsOpen(false)}>Kontak</a></li>
+        </ul>
       </div>
-      <ul style={{ display: 'flex', gap: '2rem', margin: 0, padding: 0 }}>
-        <li><a href="#hero" style={{ color: 'var(--text-main)', fontWeight: 500 }}>Beranda</a></li>
-        <li><a href="#about" style={{ color: 'var(--text-main)', fontWeight: 500 }}>Tentang</a></li>
-        <li><a href="#skills" style={{ color: 'var(--text-main)', fontWeight: 500 }}>Keahlian</a></li>
-        <li><a href="#experience" style={{ color: 'var(--text-main)', fontWeight: 500 }}>Pengalaman</a></li>
-        <li><a href="#projects" style={{ color: 'var(--text-main)', fontWeight: 500 }}>Proyek</a></li>
-        <li><a href="#contact" style={{ color: 'var(--text-main)', fontWeight: 500 }}>Kontak</a></li>
-      </ul>
     </nav>
   );
 };
