@@ -15,8 +15,12 @@ const Skills = () => {
       skills: ['Git / GitHub', 'TortoiseSVN', 'Visual Studio / VS Code', 'Android Studio', 'Postman', 'Katalon Studio', 'SSMS', 'Flowgorithm', 'Figma / Canva']
     },
     {
-      category: 'Database & Soft Skill',
-      skills: ['MySQL', 'SQL Server', 'Agile / Scrum', 'Project Management', 'Public Speaking', 'Problem Solving']
+      category: 'Database',
+      skills: ['MySQL', 'SQL Server']
+    },
+    {
+      category: 'Metodologi & Soft Skill',
+      skills: ['Agile / Scrum', 'Project Management', 'Leadership', 'Public Speaking', 'Problem Solving', 'Team Work']
     }
   ];
 
@@ -24,7 +28,7 @@ const Skills = () => {
     <section id="skills" className="reveal container">
       <h2 className="section-title text-gradient center" style={{ textAlign: 'center', display: 'block' }}>Keahlian Utama</h2>
       <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginBottom: '4rem', maxWidth: '600px', margin: '0 auto 4rem auto' }}>
-        Kumpulan keterampilan tenis dan *soft skills* yang saya terapkan dalam penyelesaian masalah dan pengelolaan tingkat proyek.
+        Kumpulan keterampilan teknis dan soft skills yang saya terapkan dalam penyelesaian masalah dan pengelolaan tingkat proyek.
       </p>
       
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>

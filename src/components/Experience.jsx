@@ -12,31 +12,31 @@ const Experience = () => {
       period: 'Nov 2024 – Jan 2026',
       role: 'Ketua Umum MPM/SCA',
       company: 'Institut Teknologi Del',
-      description: 'Memimpin Majelis Permusyawaratan Mahasiswa (Student Consultative Assembly). Mengawasi operasional tata kelola, memantau kinerja Badan Eksekutif Mahasiswa (BEM), serta memastikan kepatuhan terhadap regulasi institusi dan kebijakan pemerintahan mahasiswa.'
+      description: 'Memimpin Majelis Permusyawaratan Mahasiswa (Student Consultative Assembly). Mengawasi operasional tata kelola organisasi, memantau kinerja Badan Eksekutif Mahasiswa (BEM), serta memastikan kepatuhan terhadap regulasi institusi dan kebijakan pemerintahan mahasiswa.'
     },
     {
       period: 'Agu 2024 – Des 2024',
       role: 'Asisten Dosen - Algoritma & Struktur Data',
       company: 'Institut Teknologi Del',
-      description: 'Membantu dosen dalam menyampaikan penjelasan konsep algoritma dan struktur data, serta membimbing rrekan mahasiswa dalam penyelesaian tugas pemrograman sekaligus memberikan umpan balik (feedback) yang konstruktif untuk mendukung laju pembelajaran.'
+      description: 'Membantu dosen dalam menyampaikan penjelasan konsep algoritma dan struktur data, serta membimbing rekan mahasiswa dalam penyelesaian tugas pemrograman sekaligus memberikan umpan balik (feedback) yang konstruktif untuk mendukung laju pembelajaran.'
     },
     {
       period: 'Mei 2024 – Nov 2024',
       role: 'Wakil Ketua Komisi Pemilihan Mahasiswa',
       company: 'Institut Teknologi Del',
-      description: 'Mengawasi perencanaan serta pelaksanaan aktivitas pemilihan mahasiswa, memastikan proses yang adil dan transparan menyesuaikan pedoman institusi, dan memimpin tim anggota panitia.'
+      description: 'Mengawasi perencanaan serta pelaksanaan aktivitas pemilihan Ketua dan Wakil Ketua Badan Eksekutif Mahasiswa, memastikan proses yang adil dan transparan menyesuaikan pedoman institusi, dan memimpin tim anggota panitia.'
     },
     {
       period: 'Sep 2023 – Jan 2026',
       role: 'Anggota Del Data Science Club',
       company: 'Institut Teknologi Del',
-      description: 'Mengadakan sesi pembelajaran dan berbagi pengetahuan terkait ilmu data (data science). Terlibat aktif di dalam persiapan kompetisi nasional seperti GEMASTIK, dan meningkatkan keterampilan dalam analisis data serta machine learning.'
+      description: 'Mengadakan sesi pembelajaran dan berbagi pengetahuan terkait data science. Terlibat aktif di dalam kompetisi nasional seperti GEMASTIK, dan meningkatkan keterampilan dalam analisis data serta machine learning.'
     },
     {
       period: 'Sep 2023 – Des 2023',
       role: 'Asisten Dosen - Pemrograman Visual',
       company: 'Institut Teknologi Del',
-      description: 'Membimbing mahasiswa dalam sesi praktikum pemrograman visual. Mengevaluasi penugasan dan proyek akhir mahasiswa dengan memberikan umpan balik untuk meningkatkan keahlian menulis dan konsep visual.'
+      description: 'Membimbing mahasiswa dalam sesi praktikum pemrograman visual. Mengevaluasi penugasan mahasiswa dengan memberikan umpan balik untuk meningkatkan keahlian menulis dan konsep visual.'
     }
   ];
 

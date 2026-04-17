@@ -1,74 +1,173 @@
-import React from 'react';
+import React from "react";
+import guidedImage from "../assets/guided.png";
+import jejakpenImage from "../assets/jejakpen.png";
+import portofolioImage from "../assets/portofolio.png";
+import sinetImage from "../assets/sinet.png";
+import taskmanImage from "../assets/taskman.png";
 
 const Projects = () => {
+  const getProjectImage = (project) => {
+    if (project.image) return project.image;
+    return `https://placehold.co/1200x700/0f172a/f8fafc?text=${encodeURIComponent(
+      project.title,
+    )}`;
+  };
+
   const projects = [
     {
-      title: 'GuidedChatbot',
-      period: 'Nov 2025 – Sekarang',
-      description: 'Aplikasi chatbot berbasis Laravel (dengan database MySQL) yang memandu pengguna dalam menyusun *prompt* secara lebih efektif dan terintegrasi dengan Google Gemini API.',
-      gradient: 'linear-gradient(135deg, #FF6B6B 0%, #556270 100%)',
-      tags: ['Laravel', 'MySQL', 'Gemini API']
+      title: "Task Management App, Kanban-Based Project Management System",
+      image: taskmanImage,
+      period: "Mar 2026 - Present",
+      description:
+        "Developed a full-stack task management application using React (Vite), Node.js, and MongoDB with RESTful API architecture. Implemented Kanban board functionality, JWT-based authentication, and global state management using Redux.",
+      gradient: "linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)",
+      tags: ["React (Vite)", "Node.js", "MongoDB", "Redux", "JWT"],
     },
     {
-      title: 'Sinet - Sistem Informasi Organisasi Mahasiswa',
-      period: 'Agu 2024 – Sekarang',
-      description: 'Merancang UI/UX yang atraktif dengan Figma dengan frontend responsif menggunakan HTML, CSS, JavaScript, serta backend PHP Laravel. Fitur utamanya memuat info organisasi, sesi Q&A, hingga info karir.',
-      gradient: 'linear-gradient(135deg, #10b981 0%, #047857 100%)',
-      tags: ['Laravel', 'JavaScript', 'Figma', 'UI/UX']
+      title: "GuidedChatbot",
+      image: guidedImage,
+      period: "Nov 2025 – Sekarang",
+      description:
+        "A Laravel-based chatbot application that guides users in composing prompts more effectively and is integrated with the Google Gemini API.",
+      gradient: "linear-gradient(135deg, #FF6B6B 0%, #556270 100%)",
+      tags: ["Laravel", "MySQL", "Gemini API"],
     },
     {
-      title: 'LostAndFound',
-      period: 'Okt 2024',
-      description: 'Website responsif berbasis PHP Laravel dan MySQL, terancang dengan antarmuka Bootstrap untuk mempermudah pengguna melapor dan mencari barang hilang/ditemukan secara cepat dan efisien.',
-      gradient: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
-      tags: ['PHP', 'Bootstrap', 'MySQL']
+      title: "Sinet - Sistem Informasi Organisasi Mahasiswa",
+      image: sinetImage,
+      period: "Agu 2024 – Sekarang",
+      description:
+        "Sinet is a web-based information system designed to manage student organizations at Institut Teknologi Del. Built with Laravel and MySQL, it provides features for event management, member registration, and organizational communication.",
+      gradient: "linear-gradient(135deg, #10b981 0%, #047857 100%)",
+      tags: ["Laravel", "JavaScript", "Figma", "UI/UX"],
     },
     {
-      title: 'JejakPendaki (Open Trip)',
-      period: 'Jun 2024 – Sept 2024',
-      description: 'Membangun aplikasi terdistribusi 2 sublayanan (microservices) pengelolaan data dan antarmuka *front-end* untuk pengguna menggunakan fitur CRUD, dengan manajemen versi Git.',
-      gradient: 'linear-gradient(135deg, #8b5cf6 0%, #4c1d95 100%)',
-      tags: ['Laravel', 'Bootstrap', 'Git', 'Figma']
+      title: "JejakPendaki, Open Trip Mountain Climbing Website",
+      image: jejakpenImage,
+      period: "Jun 2024 – Sept 2024",
+      description:
+        "Developed a full-stack web application using Laravel and MySQL for managing open trip services. Implemented CRUD functionalities and user management features for handling user and trip data.",
+      gradient: "linear-gradient(135deg, #8b5cf6 0%, #4c1d95 100%)",
+      tags: ["Laravel", "MySQL", "CRUD", "User Management"],
     },
     {
-      title: 'Optimalisasi Susu Gratis (GEMASTIK XVII)',
-      period: 'Mei 2024 – Jul 2024',
-      description: 'Menulis makalah dan membangun proyek *Data Mining* menggunakan Python guna menganalisis optimalisasi lokasi bagi program bantuan gizi balita di provinsi Jawa Barat.',
-      gradient: 'linear-gradient(135deg, #f59e0b 0%, #b45309 100%)',
-      tags: ['Python', 'Data Mining', 'Machine Learning']
+      title: "Personal Portfolio Website, Modern React-Based Portfolio",
+      image: portofolioImage,
+      period: "Jan 2026 – Present",
+      description:
+        "Developed a responsive personal portfolio website using React (Vite) with a modular component-based architecture. Implemented custom UI/UX design with dark theme, smooth scroll animations, and interactive sections to enhance user experience.",
+      gradient: "linear-gradient(135deg, #6366f1 0%, #312e81 100%)",
+      tags: [
+        "React (Vite)",
+        "UI/UX",
+        "Smooth Scroll",
+        "Component Architecture",
+      ],
     },
-    {
-      title: 'Wilson Personal Portfolio',
-      period: 'Jun 2024 – Agu 2024',
-      description: 'Website pribadi responsif murni mengandalkan HTML, CSS, dan JavaScript interaktif dengan transisi mulus dan struktur semantic untuk *SEO-friendly*.',
-      gradient: 'linear-gradient(135deg, #6366f1 0%, #312e81 100%)',
-      tags: ['HTML', 'CSS', 'JavaScript']
-    }
   ];
 
   return (
     <section id="projects" className="reveal container">
-      <h2 className="section-title text-gradient center" style={{ textAlign: 'center', display: 'block' }}>Karya Terbaik Saya</h2>
-      <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginBottom: '4rem', maxWidth: '600px', margin: '0 auto 4rem auto' }}>
-        Galeri proyek unggulan tempat rekayasa perangkat lunak dikolaborasikan bersama estetika *user experience*.
+      <h2
+        className="section-title text-gradient center"
+        style={{ textAlign: "center", display: "block" }}
+      >
+        Karya Terbaik Saya
+      </h2>
+      <p
+        style={{
+          textAlign: "center",
+          color: "var(--text-muted)",
+          marginBottom: "4rem",
+          maxWidth: "600px",
+          margin: "0 auto 4rem auto",
+        }}
+      >
+        Galeri proyek unggulan tempat rekayasa perangkat lunak dikolaborasikan
+        bersama estetika <span style={{ fontStyle: "italic" }}>user experience</span>.
       </p>
 
-      <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem' }}>
+      <div
+        className="projects-grid"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+          gap: "3rem",
+        }}
+      >
         {projects.map((project, idx) => (
-          <div key={idx} className="glass-card" style={{ display: 'flex', flexDirection: 'column' }}>
-            <div style={{ height: '200px', background: project.gradient, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <h3 style={{ color: 'white', textAlign: 'center', fontWeight: 'bold', padding: '1rem', textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}>
-                {project.title}
-              </h3>
+          <div
+            key={idx}
+            className="glass-card"
+            style={{ display: "flex", flexDirection: "column" }}
+          >
+            <div
+              style={{
+                height: "160px",
+                background: project.gradient,
+                overflow: "hidden",
+              }}
+            >
+              <img
+                src={getProjectImage(project)}
+                alt={project.title}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  display: "block",
+                }}
+              />
             </div>
-            
-            <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '1rem', fontWeight: 600 }}>{project.period}</span>
-              <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', flex: 1 }}>{project.description}</p>
-              
-              <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+
+            <div
+              style={{
+                padding: "2rem",
+                flex: 1,
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <span
+                style={{
+                  fontSize: "0.85rem",
+                  color: "var(--text-muted)",
+                  marginBottom: "1rem",
+                  fontWeight: 600,
+                }}
+              >
+                {project.period}
+              </span>
+              <p
+                style={{
+                  color: "var(--text-muted)",
+                  marginBottom: "1.5rem",
+                  flex: 1,
+                }}
+              >
+                {project.description}
+              </p>
+
+              <div
+                style={{
+                  display: "flex",
+                  gap: "0.6rem",
+                  flexWrap: "wrap",
+                  marginBottom: "1rem",
+                }}
+              >
                 {project.tags.map((tag, tIdx) => (
-                  <span key={tIdx} style={{ background: 'rgba(99, 102, 241, 0.1)', color: 'var(--primary-color)', padding: '0.3rem 0.8rem', borderRadius: '50px', fontSize: '0.8rem', fontWeight: 600 }}>
+                  <span
+                    key={tIdx}
+                    style={{
+                      background: "rgba(99, 102, 241, 0.1)",
+                      color: "var(--primary-color)",
+                      padding: "0.3rem 0.8rem",
+                      borderRadius: "50px",
+                      fontSize: "0.8rem",
+                      fontWeight: 600,
+                    }}
+                  >
                     {tag}
                   </span>
                 ))}

@@ -12,7 +12,7 @@ const About = () => {
               Halo! Saya <strong>Wilson Eksaudi Sihombing</strong>, mahasiswa tingkat akhir di jurusan <strong>Sistem Informasi - Institut Teknologi Del</strong>.
             </p>
             <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', lineHeight: '1.8' }}>
-              Dengan antusiasme tinggi pada rekayasa perangkat lunak (*software engineering*), saya menspesialisasikan diri pada pengembangan <strong>Full-stack Web dan Aplikasi Mobile</strong>. Kombinasi latar belakang akademik dan pengalaman praktis dari berbagai proyek telah membekali saya kemampuan inti untuk merancang solusi inovatif sekaligus efisien di industri teknologi.
+              Dengan antusiasme tinggi pada rekayasa perangkat lunak (software engineering), saya menspesialisasikan diri pada pengembangan <strong>Full-stack Web dan Aplikasi Mobile</strong>. Kombinasi latar belakang akademik dan pengalaman praktis dari berbagai proyek telah membekali saya kemampuan inti untuk merancang solusi inovatif sekaligus efisien di industri teknologi.
             </p>
 
             <div style={{ display: 'flex', gap: '3rem', marginTop: '3rem', flexWrap: 'wrap' }}>
