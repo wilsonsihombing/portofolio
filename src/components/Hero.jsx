@@ -40,7 +40,7 @@ const Hero = () => {
               lineHeight: "1.6",
             }}
           >
-            Mahasiswa Sistem Informasi & Pengembang Full-Stack Web serta Mobile.
+            Software Engineer.
           </h3>
 
           <div
